@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta content="text/html" charset="UTF-8" />
+    <title>Bruits de Véhicules</title>
+    <link href="reset.css" type="text/css" rel="stylesheet" />
+    <link href="index.css" type="text/css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  </head>
+  <body>
+    <header>
+      <div class="title"><h1>Bruits de Véhicules</h1></div>
+    </header>
+    <main class="main">
+      <div class="board">
+        <div class="row" id="row-1">
+          <button class="tile" id="velo" onclick="play('veloBruit')">
+            <h1>Velo</h1>
+          </button>
+          <button class="tile" id="pompier" onclick="play('pompierBruit')">
+            <h1>Pompier</h1>
+          </button>
+        </div>
+        <div class="row" id="row-2">
+          <button class="tile" id="police" onclick="play('policeBruit')">
+            <h1>Police</h1>
+          </button>
+          <button class="tile" id="klaxon" onclick="play('klaxonBruit')">
+            <h1>Klaxon</h1>
+          </button>
+        </div>
+        <div class="row" id="row-3">
+          <button class="tile" id="moto" onclick="play('motoBruit')">
+            <h1>Moto</h1>
+          </button>
+          <button class="tile" id="stop" onclick="stop()"><h1>Stop</h1></button>
+        </div>
+      </div>
+    </main>
+    <script type="text/javascript" src="index.js"></script>
+  </body>
+</html>
+
+<!-- 
+<div class="dropdown">
+  <button onclick="play('veloBruit')" class="dropbtn">Dropdown</button>
+  <div id="myDropdown" class="dropdown-content">
+    <audio src="./public/des bruits/veloBruit.mp3" controls preload="metadata"></audio>
+  </div>
+</div> -->

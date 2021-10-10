@@ -1,0 +1,185 @@
+@import url("https://fonts.googleapis.com/css2?family=Faster+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Inline:wght@400&family=Faster+One&display=swap");
+body {
+  background-image: url("public/images/light\ trails.jfif");
+  background-size: inherit;
+  padding: 1rem;
+  position: absolute;
+  right: 3rem;
+}
+
+header {
+  padding: 0;
+  white-space: pre-line;
+  position: sticky;
+  position: -webkit-sticky;
+  top: 10px;
+  z-index: 1;
+}
+
+.main {
+  min-width: 400px;
+  width: fit-content;
+  margin: auto;
+  padding: auto;
+}
+
+.title {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-weight: normal;
+  font-kerning: auto;
+  font-size: 1rem;
+  margin: 1rem;
+  border-radius: 3%;
+  color: rgba(126, 92, 49, 0.712);
+  border: rgba(100, 75, 7, 0.795);
+  border-style: solid;
+  background: url("./public/images/garage.jfif");
+  background-position: center;
+  opacity: 0.9;
+}
+
+.title > h1 {
+  text-align: center;
+  font-size: 4rem;
+  color: antiquewhite;
+  opacity: 1;
+}
+
+.board {
+  position: center;
+  margin-top: 1rem;
+  display: flexbox;
+  background-color: #faebd733;
+  border-radius: 5%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  height: 25rem;
+  overflow: hidden;
+}
+
+.tile {
+  background-size: cover;
+  background-position: bottom;
+  width: 50%;
+}
+
+.tile > h1 {
+  text-align: center;
+  margin-top: 300px;
+  font-family: "Faster One", cursive;
+  font-size: 2.2rem;
+  font-weight: 100;
+  color: rgba(5, 4, 4, 0.8);
+  /* color: rgba(255, 190, 106, 0.856); */
+  border-style: solid;
+  /* background-image: url("./public/images/time\ lapse\ tunnel.jfif"); */
+  background-color: rgba(240, 248, 255, 0.6);
+  background-size: cover;
+  padding: auto;
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  opacity: 0.9;
+}
+
+button {
+  border: 0.3rem rgba(126, 92, 49, 0.712) solid;
+  border-style: inset;
+  border-radius: 10%;
+}
+
+#velo {
+  background: url("./public/images/velo.jfif");
+  background-size: cover;
+  background-position: 0px;
+}
+
+#pompier {
+  background: url("./public/images/pompier.jfif");
+  background-size: cover;
+  background-position: -5px;
+}
+
+#police {
+  background: url("./public/images/police.jfif");
+  background-size: cover;
+}
+#klaxon {
+  background: url("./public/images/klaxon.jpg");
+  background-size: cover;
+  background-position: -230px;
+}
+
+#moto {
+  background: url("./public/images/moto.jfif");
+  background-size: cover;
+  background-position: 0px;
+}
+
+
+
+@media only screen and (min-width: 768px) {
+  body {
+    width: 90%;
+    background-image: url("./public/images/light\ trails.jfif");
+    font-kerning: auto;
+    margin: 0;
+  }
+
+  .title {
+    font-family: "Bungee Inline", cursive;
+  }
+
+  .main {
+    width: 100%;
+  }
+
+
+  .board {
+    margin-top: 1rem;
+    display: flexbox;
+    /* background-color: #faebd733; */
+    border-radius: 5%;
+    flex-wrap: wrap;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .tile {
+    max-width: auto;
+  }
+
+  #velo {
+    background: url("./public/images/velo.jfif");
+    background-size: cover;
+  }
+
+  #pompier {
+    background: url("./public/images/pompier.jfif");
+    background-size: cover;
+  }
+
+  #police {
+    background: url("./public/images/police.jfif");
+    background-size: cover;
+  }
+  #klaxon {
+    background: url("./public/images/klaxon.jpg");
+    background-size: cover;
+    background-position: 0px;
+  }
+
+  #moto {
+    background: url("./public/images/moto.jfif");
+    background-size: cover;
+    background-position: 0px;
+  }
+}
+
